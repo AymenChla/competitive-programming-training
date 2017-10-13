@@ -1,0 +1,3 @@
+C:/Users/asus pro/Desktop/training/Helpful Maths.codeforces/cmake-build-debug/CMakeFiles/Helpful_Maths_codeforces.dir
+C:/Users/asus pro/Desktop/training/Helpful Maths.codeforces/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/asus pro/Desktop/training/Helpful Maths.codeforces/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1494684159 source:c:\users\asus pro\desktop\codeforce.opponents\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

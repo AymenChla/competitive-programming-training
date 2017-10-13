@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/asus pro/Desktop/training/Petya and Strings.codeforces/main.cpp
+iostream
+-
+string
+-
+string.h
+-
+algorithm
+-
+

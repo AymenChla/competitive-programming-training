@@ -1,0 +1,3 @@
+C:/Users/asus pro/Desktop/training/A. Boy or Girl.codeforces/cmake-build-debug/CMakeFiles/A__Boy_or_Girl_codeforces.dir
+C:/Users/asus pro/Desktop/training/A. Boy or Girl.codeforces/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/asus pro/Desktop/training/A. Boy or Girl.codeforces/cmake-build-debug/CMakeFiles/rebuild_cache.dir

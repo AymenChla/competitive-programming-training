@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1502494315 source:c:\users\asus pro\desktop\training\nombre des poteaux.scorif\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+

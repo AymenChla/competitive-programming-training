@@ -1,0 +1,774 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MAX_OPERATORS 100
+#define MAX_VAR 10
+
+typedef struct
+{
+    char T[MAX_OPERATORS];
+    int top;
+
+} Stack;
+
+
+
+
+
+int empty(Stack s)
+{
+    return (s.top==0);
+}
+
+char pop(Stack *s)
+{
+    if(!empty(*s)){
+        char c = s->T[s->top-1];
+        s->top--;
+        return c;
+    }
+    return '\0';
+}
+
+int full(Stack s)
+{
+    return (s.top==MAX_OPERATORS);
+}
+
+void push(Stack *s,char val)
+{
+    if(!full(*s)){
+        s->T[s->top]  = val;
+        s->top++;
+    }
+}
+
+
+void print_stack(Stack s)
+{
+    int i=0;
+    for(i=0 ;i < s.top ; i++)
+        printf("%c",s.T[i]);
+    printf("\n");
+}
+
+int lettre_miniscule(char c)
+{
+    if(c <= 'z' && c >='a')
+        return 1;
+    return 0;
+
+}
+
+
+int compare_operators(char a, char b)
+{
+      char operators[4] = {'^','|','&','~'};
+      int precedence[4] = {1,2,3,4};
+
+      int indice_a,indice_b;
+      int i;
+
+      for(i=0 ;i < 4 ;i++)
+      {
+          if(operators[i] == a)
+            indice_a = i;
+          if(operators[i] == b)
+            indice_b = i;
+      }
+
+      if(precedence[indice_a] > precedence[indice_b])
+        return 1;
+      else if(precedence[indice_a]  < precedence[indice_b])
+        return -1;
+      return 0;
+}
+
+void separer_expression(char *chaine , char *expr1, char *expr2)
+{
+    int i=0 , j=0;
+
+    //expression 1
+    while(!( (lettre_miniscule(chaine[i]) ||chaine[i] == ')') && (lettre_miniscule(chaine[i+1]) || chaine[i+1] == '~' || chaine[i+1] == '('))){
+          expr1[i] = chaine[i];
+          i++;
+    }
+    expr1[i] = chaine[i];
+    i++;
+    expr1[i] = '\0';
+
+    //expression 2
+    while(chaine[i] != '\0')
+    {
+        expr2[j] = chaine[i];
+        i++;
+        j++;
+    }
+    expr2[j] = '\0';
+
+
+}
+int existe(char *nom_var,int nb_var, char var)
+{
+        int i;
+        for(i=0 ;i < nb_var; i++)
+        {
+            if(nom_var[i] == var)
+                return 1;
+        }
+        return 0;
+}
+
+int cree_tableau_var(char *nom_var,char  *expr)
+{
+    int nb_var=0;
+    int i=0;
+
+    while(expr[i] != '\0')
+    {
+        if(lettre_miniscule(expr[i]) && !existe(nom_var,nb_var,expr[i])){
+            nom_var[nb_var] = expr[i];
+            nb_var++;
+        }
+        i++;
+    }
+    nom_var[nb_var] = '\0';
+
+    return nb_var;
+}
+
+//indique que les 2 tableau contient les memes variables ou pas
+int comparer_variable(char *nom_var1 , char *nom_var2)
+{
+    int i=0,j=0,trouver;
+    for(i=0 ; i < strlen(nom_var1) ;i++)
+    {
+        trouver=0;
+        for(j=0 ; j < strlen(nom_var2) ;j++)
+        {
+            if(nom_var1[i] == nom_var2[j])
+                trouver = 1;
+
+        }
+
+        if(!trouver)
+            return 0;
+    }
+
+    return 1;
+}
+
+
+
+
+void shunting_yard_algorithm(char *expr,    char *output_queue){
+
+    Stack s;
+    s.top = 0;
+
+
+    int indice_output=0,indice_token=0;
+
+
+    while(expr[indice_token] != '\0')
+    {
+        //si variable
+        if(lettre_miniscule(expr[indice_token]))
+        {
+            output_queue[indice_output] = expr[indice_token];
+            indice_output++;
+        }
+        else if(expr[indice_token] == '(')
+        {
+                push(&s,expr[indice_token]);
+        }
+        else if(expr[indice_token] == ')') //priorité des parentheses
+        {
+            while(!empty(s) && s.T[s.top-1] != '('){
+                    output_queue[indice_output] = pop(&s);
+                    indice_output++;
+            }
+            pop(&s);
+        }
+        else //si operateur
+        {
+            if(empty(s) || s.T[s.top-1] == '(')
+            {
+                push(&s,expr[indice_token]);
+            }
+            else{
+
+                //priorité superieur
+                while(!empty(s) && s.T[s.top-1] != '(' && compare_operators(s.T[s.top-1], expr[indice_token]) >= 0  && !(s.T[s.top-1]=='~' && expr[indice_token]=='~')){
+                    output_queue[indice_output] = pop(&s);
+                    indice_output++;
+                }
+                push(&s,expr[indice_token]);
+
+            }
+        }
+
+
+        indice_token++;
+    }
+
+    //vider la pile
+    while(!empty(s))
+    {
+            output_queue[indice_output] = pop(&s);
+            indice_output++;
+    }
+
+    output_queue[indice_output] = '\0';
+
+}
+
+int indice_var(char *nom_var, char var)
+{
+    int i;
+    for(i=0 ; i < strlen(nom_var); i++)
+        if(nom_var[i] == var) return i;
+    return -1;
+}
+
+void decale(char *T,int depart)
+{
+    int i;
+    for(i=depart ; i < strlen(T); i++)
+        T[i] = T[i+1];
+}
+
+char calculer_expression(int *val_var, char* nom_var , char *output_queue)
+{
+        char *iteration=NULL;
+        int taille=strlen(output_queue);
+        int i;
+
+        iteration = (char *) malloc(taille*sizeof(char));
+
+        //remplissage
+        for(i=0 ; i <= taille ;i++)
+        {
+            if(lettre_miniscule(output_queue[i]))
+            {
+                iteration[i] = val_var[indice_var(nom_var,output_queue[i])] + '0';
+            }
+            else iteration[i] = output_queue[i];
+        }
+
+
+
+
+        while(taille != 1)
+        {
+            i=0;
+            while(iteration[i]=='0' || iteration[i] == '1')
+                i++;
+
+            if(iteration[i] == '~')
+            {
+                iteration[i-1] = (iteration[i-1] == '0' ) ? '1': '0';
+                decale(iteration,i);
+                taille--;
+            }
+            else if(iteration[i] == '&')
+            {
+                iteration[i-2] = ( (iteration[i-2] - '0') &  (iteration[i-1] - '0') ) + '0';
+                decale(iteration,i-1);
+                decale(iteration,i-1);
+                taille-=2;
+            }
+
+            else if(iteration[i] == '|')
+            {
+                iteration[i-2] = ( (iteration[i-2] - '0') |  (iteration[i-1] - '0') ) + '0';
+                decale(iteration,i-1);
+                decale(iteration,i-1);
+                taille-=2;
+            }
+            else if(iteration[i] == '^')
+            {
+                iteration[i-2] = ( (iteration[i-2] - '0') ^  (iteration[i-1] - '0') ) + '0';
+                decale(iteration,i-1);
+                decale(iteration,i-1);
+                taille-=2;
+            }
+
+        }
+
+        return iteration[0];
+}
+
+void supprimer_espace(char *chaine)
+{
+        int i,j,taille=strlen(chaine);
+
+        for(i=0 ; i < taille ;i++)
+        {
+            if(chaine[i]==' ')
+            {
+                for(j=i ;j < taille ; j++)
+                {
+                    chaine[j] = chaine[j+1];
+                }
+                taille--;
+            }
+        }
+}
+
+int gererer_vals(int nb_var,char *nom_var1,char *output_queue1, char *output_queue2)
+{
+    int  val_var[10];
+    char result1,result2;
+    int i,j,k,l,m,n,o,p,q,r;
+
+        switch(nb_var)
+        {
+            case 1:
+                for(i=0  ;i < 2  ;i++){
+
+                    val_var[0]=i;
+
+                    result1=calculer_expression(val_var,nom_var1,output_queue1);
+                    result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                    if(result1!=result2)
+                        return 0;
+                }
+            break;
+
+            case 2:
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+
+                        result1=calculer_expression(val_var,nom_var1,output_queue1);
+                        result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                        if(result1!=result2)
+                        return 0;
+                    }
+                }
+            break;
+
+            case 3:
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+                        for(k=0 ;k < 2 ;k++)
+                        {
+                            val_var[2] = k;
+
+
+                            result1=calculer_expression(val_var,nom_var1,output_queue1);
+                            result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                            if(result1!=result2)
+                            return 0;
+                        }
+                    }
+                }
+
+
+            break;
+
+            case 4:
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+                        for(k=0 ;k < 2 ;k++)
+                        {
+                            val_var[2] = k;
+                            for(l = 0 ; l < 2 ; l++)
+                            {
+                                val_var[3] = l;
+
+                                result1=calculer_expression(val_var,nom_var1,output_queue1);
+                                result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                                if(result1!= result2)
+                                return 0;
+                            }
+                        }
+                    }
+                }
+            break;
+
+            case 5:
+
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+                        for(k=0 ;k < 2 ;k++)
+                        {
+                            val_var[2] = k;
+                            for(l = 0 ; l < 2 ; l++)
+                            {
+                                val_var[3] = l;
+
+                                for(m=0 ; m < 2  ; m++)
+                                {
+                                    val_var[4] = m;
+                                    result1=calculer_expression(val_var,nom_var1,output_queue1);
+                                    result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                                    if(result1!= result2)
+                                    return 0;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            break;
+
+
+            case 6:
+
+
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+                        for(k=0 ;k < 2 ;k++)
+                        {
+                            val_var[2] = k;
+                            for(l = 0 ; l < 2 ; l++)
+                            {
+                                val_var[3] = l;
+
+                                for(m=0 ; m < 2  ; m++)
+                                {
+                                    val_var[4] = m;
+
+                                    for(n=0 ;n < 2 ;n++)
+                                    {
+                                        val_var[5] = n;
+
+                                        result1=calculer_expression(val_var,nom_var1,output_queue1);
+                                        result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                                        if(result1!= result2)
+                                        return 0;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            break;
+
+
+            case 7:
+
+
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+                        for(k=0 ;k < 2 ;k++)
+                        {
+                            val_var[2] = k;
+                            for(l = 0 ; l < 2 ; l++)
+                            {
+                                val_var[3] = l;
+
+                                for(m=0 ; m < 2  ; m++)
+                                {
+                                    val_var[4] = m;
+
+                                    for(n=0 ;n < 2 ;n++)
+                                    {
+                                        val_var[5] = n;
+
+                                        for(o=0 ; o < 2; o++)
+                                        {
+                                            val_var[6] = o;
+                                            result1=calculer_expression(val_var,nom_var1,output_queue1);
+                                            result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                                            if(result1!= result2)
+                                            return 0;
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            break;
+
+            case 8:
+
+
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+                        for(k=0 ;k < 2 ;k++)
+                        {
+                            val_var[2] = k;
+                            for(l = 0 ; l < 2 ; l++)
+                            {
+                                val_var[3] = l;
+
+                                for(m=0 ; m < 2  ; m++)
+                                {
+                                    val_var[4] = m;
+
+                                    for(n=0 ;n < 2 ;n++)
+                                    {
+                                        val_var[5] = n;
+
+                                        for(o=0 ; o < 2; o++)
+                                        {
+                                            val_var[6] = o;
+
+                                            for(p=0 ; p < 2; p++)
+                                            {
+                                                val_var[7] = p;
+                                                result1=calculer_expression(val_var,nom_var1,output_queue1);
+                                                result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                                                if(result1!= result2)
+                                                return 0;
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            break;
+
+            case 9:
+
+
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+                        for(k=0 ;k < 2 ;k++)
+                        {
+                            val_var[2] = k;
+                            for(l = 0 ; l < 2 ; l++)
+                            {
+                                val_var[3] = l;
+
+                                for(m=0 ; m < 2  ; m++)
+                                {
+                                    val_var[4] = m;
+
+                                    for(n=0 ;n < 2 ;n++)
+                                    {
+                                        val_var[5] = n;
+
+                                        for(o=0 ; o < 2; o++)
+                                        {
+                                            val_var[6] = o;
+
+                                            for(p=0 ; p < 2; p++)
+                                            {
+                                                val_var[7] = p;
+
+                                                for(q=0 ;q < 2; q++)
+                                                {
+                                                    val_var[8] = q;
+
+                                                    result1=calculer_expression(val_var,nom_var1,output_queue1);
+                                                    result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                                                    if(result1!= result2)
+                                                    return 0;
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            break;
+
+
+            case 10:
+
+
+                for(i=0 ; i < 2 ; i++)
+                {
+                    val_var[0] = i;
+                    for(j=0; j < 2 ; j++)
+                    {
+                        val_var[1] = j;
+                        for(k=0 ;k < 2 ;k++)
+                        {
+                            val_var[2] = k;
+                            for(l = 0 ; l < 2 ; l++)
+                            {
+                                val_var[3] = l;
+
+                                for(m=0 ; m < 2  ; m++)
+                                {
+                                    val_var[4] = m;
+
+                                    for(n=0 ;n < 2 ;n++)
+                                    {
+                                        val_var[5] = n;
+
+                                        for(o=0 ; o < 2; o++)
+                                        {
+                                            val_var[6] = o;
+
+                                            for(p=0 ; p < 2; p++)
+                                            {
+                                                val_var[7] = p;
+
+                                                for(q=0 ;q < 2; q++)
+                                                {
+                                                    val_var[8] = q;
+
+                                                    for(r=0 ;r < 2; r++)
+                                                    {
+                                                        val_var[9] = r;
+                                                        result1=calculer_expression(val_var,nom_var1,output_queue1);
+                                                        result2=calculer_expression(val_var,nom_var1,output_queue2);
+
+                                                        if(result1!= result2)
+                                                        return 0;
+                                                    }
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            break;
+
+            default:
+            break;
+
+        }
+
+        return 1;
+}
+
+int main()
+{
+
+    char chaine[100000];
+    char expr1[MAX_OPERATORS+MAX_VAR];
+    char expr2[MAX_OPERATORS+MAX_VAR];
+
+    char nom_var1[10];
+    char nom_var2[10];
+
+
+    int nb_var1=0;
+    int nb_var2=0;
+
+
+    while(!feof(stdin))
+    {
+
+        //saisie de la chaine
+        gets(chaine);
+        supprimer_espace(chaine);
+
+
+        //separation des expressions
+        separer_expression(chaine, expr1,expr2);
+
+        //affchage des expressions
+        //printf("expr1: %s\n",expr1);
+        //printf("expr2: %s\n",expr2);
+
+        //creer tableaux des variables utile pour comparer les variables
+        nb_var1 = cree_tableau_var(nom_var1,expr1);
+        nb_var2 = cree_tableau_var(nom_var2,expr2);
+
+
+
+        //si il n'ont pas le meme nombre de variable
+        if(nb_var1 != nb_var2)
+            printf("<>\n");
+        else{
+            //si il non pas les memes var
+            if(!comparer_variable(nom_var1, nom_var2))
+                printf("<>\n");
+            else
+            {
+                char output_queue1[MAX_VAR+MAX_OPERATORS];
+                char output_queue2[MAX_VAR+MAX_OPERATORS];
+
+                shunting_yard_algorithm(expr1,output_queue1);
+                //printf("output %s\n",output_queue1);
+
+                shunting_yard_algorithm(expr2,output_queue2);
+                //printf("output %s\n",output_queue2);
+
+                //printf("nom var: %s\n",nom_var1);
+
+
+
+
+
+                if(!gererer_vals(nb_var1,nom_var1,output_queue1,output_queue2))
+                    printf("<>\n");
+                else printf("=\n");
+            }
+        }
+
+
+
+    }
+
+
+    return 0;
+}

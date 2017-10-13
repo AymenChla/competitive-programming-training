@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1502600555 source:c:\users\asus pro\desktop\training\edx.prepareyourselftocompetition\main.cpp
+	<fstream>
+	<cmath>
+
