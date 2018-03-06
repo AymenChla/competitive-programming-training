@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/cp3_2_2_2.dir/main.cpp.o  -o cp3_2_2_2 

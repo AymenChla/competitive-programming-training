@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/I__Bicycle_Race.dir/main.cpp.o  -o I__Bicycle_Race 

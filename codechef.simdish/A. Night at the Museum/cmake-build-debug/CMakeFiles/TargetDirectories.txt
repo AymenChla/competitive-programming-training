@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/A. Night at the Museum/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/A. Night at the Museum/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/A. Night at the Museum/cmake-build-debug/CMakeFiles/A__Night_at_the_Museum.dir

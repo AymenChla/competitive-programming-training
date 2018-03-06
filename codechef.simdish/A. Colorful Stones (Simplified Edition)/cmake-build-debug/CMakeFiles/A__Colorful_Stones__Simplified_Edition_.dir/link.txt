@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Colorful_Stones__Simplified_Edition_.dir/main.cpp.o  -o A__Colorful_Stones__Simplified_Edition_ 

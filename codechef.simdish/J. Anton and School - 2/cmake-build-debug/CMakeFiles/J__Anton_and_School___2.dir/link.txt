@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/J__Anton_and_School___2.dir/main.cpp.o  -o J__Anton_and_School___2 

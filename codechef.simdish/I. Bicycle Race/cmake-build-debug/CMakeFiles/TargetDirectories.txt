@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/I. Bicycle Race/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/I. Bicycle Race/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/I. Bicycle Race/cmake-build-debug/CMakeFiles/I__Bicycle_Race.dir

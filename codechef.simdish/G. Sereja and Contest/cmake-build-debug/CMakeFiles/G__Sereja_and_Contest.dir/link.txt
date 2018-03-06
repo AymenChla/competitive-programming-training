@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/G__Sereja_and_Contest.dir/main.cpp.o  -o G__Sereja_and_Contest 

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/freenemya/CLionProjects/F. Parent Queries/main.cpp
+iostream
+-
+cstdio
+-
+cstdlib
+-
+cmath
+-
+algorithm
+-
+climits
+-
+cstring
+-
+string
+-
+set
+-
+map
+-
+queue
+-
+stack
+-
+vector
+-
+list
+-
+

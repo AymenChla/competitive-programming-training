@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/F__Parent_Queries.dir/main.cpp.o  -o F__Parent_Queries 

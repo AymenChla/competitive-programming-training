@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/A. Colorful Stones (Simplified Edition)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/A. Colorful Stones (Simplified Edition)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/A. Colorful Stones (Simplified Edition)/cmake-build-debug/CMakeFiles/A__Colorful_Stones__Simplified_Edition_.dir

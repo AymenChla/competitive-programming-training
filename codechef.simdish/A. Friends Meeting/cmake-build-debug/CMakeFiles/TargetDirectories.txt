@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/A. Friends Meeting/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/A. Friends Meeting/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/A. Friends Meeting/cmake-build-debug/CMakeFiles/A__Friends_Meeting.dir

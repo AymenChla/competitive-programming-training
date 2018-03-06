@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Sereja_and_Dima.dir/main.cpp.o  -o A__Sereja_and_Dima 

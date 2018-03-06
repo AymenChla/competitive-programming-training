@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Friends_Meeting.dir/main.cpp.o  -o A__Friends_Meeting 

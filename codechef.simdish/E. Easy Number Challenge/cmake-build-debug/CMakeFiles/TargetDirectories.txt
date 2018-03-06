@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/E. Easy Number Challenge/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/E. Easy Number Challenge/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/E. Easy Number Challenge/cmake-build-debug/CMakeFiles/E__Easy_Number_Challenge.dir

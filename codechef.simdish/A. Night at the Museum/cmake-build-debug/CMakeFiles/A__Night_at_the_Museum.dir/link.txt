@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Night_at_the_Museum.dir/main.cpp.o  -o A__Night_at_the_Museum 

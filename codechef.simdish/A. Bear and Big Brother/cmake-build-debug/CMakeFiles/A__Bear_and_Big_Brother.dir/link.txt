@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Bear_and_Big_Brother.dir/main.cpp.o  -o A__Bear_and_Big_Brother 

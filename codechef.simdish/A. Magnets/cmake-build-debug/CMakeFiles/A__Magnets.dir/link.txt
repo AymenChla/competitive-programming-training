@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Magnets.dir/main.cpp.o  -o A__Magnets 

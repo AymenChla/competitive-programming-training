@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/F__Xenia_and_Hamming.dir/main.cpp.o  -o F__Xenia_and_Hamming 

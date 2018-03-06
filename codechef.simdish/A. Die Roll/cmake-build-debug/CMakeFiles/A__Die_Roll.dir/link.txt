@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Die_Roll.dir/main.cpp.o  -o A__Die_Roll 

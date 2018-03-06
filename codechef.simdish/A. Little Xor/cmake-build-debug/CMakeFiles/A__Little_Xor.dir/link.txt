@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Little_Xor.dir/main.cpp.o  -o A__Little_Xor 

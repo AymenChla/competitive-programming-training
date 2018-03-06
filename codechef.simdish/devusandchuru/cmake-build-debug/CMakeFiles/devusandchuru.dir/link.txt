@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/devusandchuru.dir/main.cpp.o  -o devusandchuru 

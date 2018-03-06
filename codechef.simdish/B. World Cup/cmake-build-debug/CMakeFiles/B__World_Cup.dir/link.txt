@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B__World_Cup.dir/main.cpp.o  -o B__World_Cup 
