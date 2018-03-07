@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/A. Shaass and Oskols /cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/A. Shaass and Oskols /cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/A. Shaass and Oskols /cmake-build-debug/CMakeFiles/A__Shaass_and_Oskols_.dir

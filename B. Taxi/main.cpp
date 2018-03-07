@@ -1,37 +1,33 @@
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    int n;
-    cin >> n;
-    int opt=0;
-    int a[n];
-    int cmpt[5] = {0};
-
-    for(int i=0 ; i < n ; i++){
-            cin >> a[i];
-            cmpt[a[i]]++;
+int main() {
+    int n; cin >> n;
+    int ans = 0,nb[5]={0};
+    while(n--) {
+        int i;
+        cin >> i;
+        nb[i]++;
     }
-
-    opt += min(cmpt[3],cmpt[1]);
-    cmpt[1] -= min(cmpt[3],cmpt[1]);
-    if(cmpt[1]>0)
+    ans=nb[4]+nb[3]+(nb[2]/2);
+    nb[2] %= 2;
+    if(nb[2]>0)
     {
-        opt += max(cmpt[1],cmpt[2]);
-        if(cmpt[1] > cmpt[2])
-        {
-            int r = cmpt[1] - 2*cmpt[2];
-            opt += r -ceil(r /4.);
-        }
-        else {
-            cmpt[2] -= min(cmpt[1],cmpt[2]);
-            opt += cmpt[2] - ceil(cmpt[2]/2);
-        }
-   }
+        if(nb[1]>1) nb[1]-=2;
+        else if(nb[1]==1) nb[1]--;
+    }
+    if(nb[3]<nb[1])
+        nb[1]-=nb[3];
+    else nb[1]=0;
 
-    cout << n - opt << endl;
+    ans+=(nb[1]/4);
+    nb[1] %= 4;
+    ans+=(nb[1]/3);
+    nb[1] %= 3;
+    ans+=(nb[1]/2);
+    nb[1] %= 2;
+    ans+=nb[2]+nb[1];
+    cout << ans << endl;
 
     return 0;
 }
