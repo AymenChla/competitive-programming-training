@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/Circle Kingdom/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/Circle Kingdom/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/Circle Kingdom/cmake-build-debug/CMakeFiles/Circle_Kingdom.dir

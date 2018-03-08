@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Free_Ice_Cream.dir/main.cpp.o  -o A__Free_Ice_Cream 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Berzerk_.dir/main.cpp.o  -o A__Berzerk_ 

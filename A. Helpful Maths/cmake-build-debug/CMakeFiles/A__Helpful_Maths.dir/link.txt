@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Helpful_Maths.dir/main.cpp.o  -o A__Helpful_Maths 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Anton_and_Letters.dir/main.cpp.o  -o A__Anton_and_Letters 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Reversed_Number.dir/main.cpp.o  -o Reversed_Number 

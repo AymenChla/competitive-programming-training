@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Circle_Kingdom.dir/main.cpp.o  -o Circle_Kingdom 
