@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/Roy and Coin Boxes(lazy propagation)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/Roy and Coin Boxes(lazy propagation)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/Roy and Coin Boxes(lazy propagation)/cmake-build-debug/CMakeFiles/Roy_and_Coin_Boxes_lazy_propagation_.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Fox_and_Cross.dir/main.cpp.o  -o A__Fox_and_Cross 

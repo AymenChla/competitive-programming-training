@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B__Code_For_1.dir/main.cpp.o  -o B__Code_For_1 

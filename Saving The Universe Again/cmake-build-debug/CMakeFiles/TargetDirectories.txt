@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/Saving The Universe Again/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/Saving The Universe Again/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/Saving The Universe Again/cmake-build-debug/CMakeFiles/Saving_The_Universe_Again.dir

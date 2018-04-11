@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/10110___Light__more_light.dir/main.cpp.o  -o 10110___Light__more_light 

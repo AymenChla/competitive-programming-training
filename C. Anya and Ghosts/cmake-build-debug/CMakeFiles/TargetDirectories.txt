@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/C. Anya and Ghosts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/C. Anya and Ghosts/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/C. Anya and Ghosts/cmake-build-debug/CMakeFiles/C__Anya_and_Ghosts.dir

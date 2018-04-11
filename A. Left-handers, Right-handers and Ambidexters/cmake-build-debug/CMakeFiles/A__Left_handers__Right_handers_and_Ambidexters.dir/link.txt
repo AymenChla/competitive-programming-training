@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Left_handers__Right_handers_and_Ambidexters.dir/main.cpp.o  -o A__Left_handers__Right_handers_and_Ambidexters 

@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/B. Students in Railway Carriage/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/B. Students in Railway Carriage/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/B. Students in Railway Carriage/cmake-build-debug/CMakeFiles/B__Students_in_Railway_Carriage.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Diagonal_Walking.dir/main.cpp.o  -o A__Diagonal_Walking 

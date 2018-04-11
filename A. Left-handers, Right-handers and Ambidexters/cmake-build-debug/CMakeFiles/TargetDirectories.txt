@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/A. Left-handers, Right-handers and Ambidexters/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/A. Left-handers, Right-handers and Ambidexters/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/A. Left-handers, Right-handers and Ambidexters/cmake-build-debug/CMakeFiles/A__Left_handers__Right_handers_and_Ambidexters.dir

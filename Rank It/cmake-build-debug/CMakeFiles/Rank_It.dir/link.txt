@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Rank_It.dir/main.cpp.o  -o Rank_It 

@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/A. Oath of the Night's Watch/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/A. Oath of the Night's Watch/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/A. Oath of the Night's Watch/cmake-build-debug/CMakeFiles/A__Oath_of_the_Night_s_Watch.dir

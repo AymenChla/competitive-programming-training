@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/A. Diagonal Walking/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/A. Diagonal Walking/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/A. Diagonal Walking/cmake-build-debug/CMakeFiles/A__Diagonal_Walking.dir

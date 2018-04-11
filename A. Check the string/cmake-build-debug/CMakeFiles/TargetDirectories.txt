@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/A. Check the string/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/A. Check the string/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/A. Check the string/cmake-build-debug/CMakeFiles/A__Check_the_string.dir

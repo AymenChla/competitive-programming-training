@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/C. Make a Square/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/C. Make a Square/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/C. Make a Square/cmake-build-debug/CMakeFiles/C__Make_a_Square.dir

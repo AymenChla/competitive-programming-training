@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Oath_of_the_Night_s_Watch.dir/main.cpp.o  -o A__Oath_of_the_Night_s_Watch 

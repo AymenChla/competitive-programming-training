@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Help_Ashu.dir/main.cpp.o  -o Help_Ashu 

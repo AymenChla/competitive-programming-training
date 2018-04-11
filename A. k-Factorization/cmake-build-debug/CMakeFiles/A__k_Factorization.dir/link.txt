@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__k_Factorization.dir/main.cpp.o  -o A__k_Factorization 

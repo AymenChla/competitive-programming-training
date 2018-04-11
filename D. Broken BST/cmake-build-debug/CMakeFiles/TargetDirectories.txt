@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/D. Broken BST/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/D. Broken BST/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/D. Broken BST/cmake-build-debug/CMakeFiles/D__Broken_BST.dir

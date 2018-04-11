@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/Help Ashu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/Help Ashu/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/Help Ashu/cmake-build-debug/CMakeFiles/Help_Ashu.dir

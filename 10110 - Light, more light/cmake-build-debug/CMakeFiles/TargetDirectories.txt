@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/10110 - Light, more light/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/10110 - Light, more light/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/10110 - Light, more light/cmake-build-debug/CMakeFiles/10110___Light__more_light.dir

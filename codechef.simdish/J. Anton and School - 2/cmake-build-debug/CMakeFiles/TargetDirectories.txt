@@ -1,3 +1,3 @@
-/home/freenemya/CLionProjects/J. Anton and School - 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/freenemya/CLionProjects/J. Anton and School - 2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/freenemya/CLionProjects/J. Anton and School - 2/cmake-build-debug/CMakeFiles/J__Anton_and_School___2.dir
+/home/freenemya/CLionProjects/competitive-programming-training/codechef.simdish/J. Anton and School - 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/competitive-programming-training/codechef.simdish/J. Anton and School - 2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/competitive-programming-training/codechef.simdish/J. Anton and School - 2/cmake-build-debug/CMakeFiles/J__Anton_and_School___2.dir

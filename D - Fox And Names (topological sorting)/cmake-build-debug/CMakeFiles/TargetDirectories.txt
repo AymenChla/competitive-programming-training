@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/D - Fox And Names (topological sorting)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/D - Fox And Names (topological sorting)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/D - Fox And Names (topological sorting)/cmake-build-debug/CMakeFiles/D___Fox_And_Names__topological_sorting_.dir

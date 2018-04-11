@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/E__Cards_Sorting.dir/main.cpp.o  -o E__Cards_Sorting 

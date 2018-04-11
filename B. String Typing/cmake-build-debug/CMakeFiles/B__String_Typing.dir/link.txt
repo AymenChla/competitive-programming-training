@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B__String_Typing.dir/main.cpp.o  -o B__String_Typing 

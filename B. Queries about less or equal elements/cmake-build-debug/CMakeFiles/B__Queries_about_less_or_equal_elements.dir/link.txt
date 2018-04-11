@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B__Queries_about_less_or_equal_elements.dir/main.cpp.o  -o B__Queries_about_less_or_equal_elements 

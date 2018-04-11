@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B__Restoring_Painting.dir/main.cpp.o  -o B__Restoring_Painting 

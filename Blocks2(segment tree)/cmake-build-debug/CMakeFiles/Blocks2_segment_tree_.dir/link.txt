@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Blocks2_segment_tree_.dir/main.cpp.o  -o Blocks2_segment_tree_ 

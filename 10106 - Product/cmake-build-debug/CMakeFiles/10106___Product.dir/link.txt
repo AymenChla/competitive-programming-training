@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/10106___Product.dir/main.cpp.o  -o 10106___Product 

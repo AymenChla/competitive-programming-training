@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Trouble_Sort.dir/main.cpp.o  -o Trouble_Sort 

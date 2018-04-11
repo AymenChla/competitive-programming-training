@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B__Minimize_the_error.dir/main.cpp.o  -o B__Minimize_the_error 
