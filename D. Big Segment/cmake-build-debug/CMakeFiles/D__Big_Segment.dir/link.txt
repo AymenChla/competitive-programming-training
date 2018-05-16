@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/D__Big_Segment.dir/main.cpp.o  -o D__Big_Segment 

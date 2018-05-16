@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/D. Bus Driver/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/D. Bus Driver/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/D. Bus Driver/cmake-build-debug/CMakeFiles/D__Bus_Driver.dir

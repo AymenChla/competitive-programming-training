@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B__Free_Cash.dir/main.cpp.o  -o B__Free_Cash 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B__Moncef_and_the_gears.dir/main.cpp.o  -o B__Moncef_and_the_gears 

@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/Block(lazy prop)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/Block(lazy prop)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/Block(lazy prop)/cmake-build-debug/CMakeFiles/Block_lazy_prop_.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/F1__Lightsabers__easy_.dir/main.cpp.o  -o F1__Lightsabers__easy_ 

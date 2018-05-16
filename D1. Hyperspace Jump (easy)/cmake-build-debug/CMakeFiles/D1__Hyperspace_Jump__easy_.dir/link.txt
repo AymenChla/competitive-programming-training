@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/D1__Hyperspace_Jump__easy_.dir/main.cpp.o  -o D1__Hyperspace_Jump__easy_ 

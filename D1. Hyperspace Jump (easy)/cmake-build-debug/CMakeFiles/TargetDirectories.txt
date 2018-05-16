@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/D1. Hyperspace Jump (easy)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/D1. Hyperspace Jump (easy)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/D1. Hyperspace Jump (easy)/cmake-build-debug/CMakeFiles/D1__Hyperspace_Jump__easy_.dir

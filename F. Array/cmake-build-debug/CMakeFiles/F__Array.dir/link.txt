@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/F__Array.dir/main.cpp.o CMakeFiles/F__Array.dir/B.cpp.o  -o F__Array 

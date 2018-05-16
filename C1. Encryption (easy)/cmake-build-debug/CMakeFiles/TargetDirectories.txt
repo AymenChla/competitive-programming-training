@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/C1. Encryption (easy)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/C1. Encryption (easy)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/C1. Encryption (easy)/cmake-build-debug/CMakeFiles/C1__Encryption__easy_.dir

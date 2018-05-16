@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Bit__.dir/main.cpp.o  -o A__Bit__ 

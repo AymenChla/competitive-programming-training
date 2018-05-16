@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Translation_.dir/main.cpp.o  -o A__Translation_ 

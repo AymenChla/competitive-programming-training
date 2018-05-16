@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/F1. Lightsabers (easy)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/F1. Lightsabers (easy)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/F1. Lightsabers (easy)/cmake-build-debug/CMakeFiles/F1__Lightsabers__easy_.dir

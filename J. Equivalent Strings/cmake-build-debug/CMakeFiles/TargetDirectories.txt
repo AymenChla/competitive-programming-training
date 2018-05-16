@@ -1,0 +1,3 @@
+/home/freenemya/Desktop/J. Equivalent Strings/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/Desktop/J. Equivalent Strings/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/Desktop/J. Equivalent Strings/cmake-build-debug/CMakeFiles/J__Equivalent_Strings.dir

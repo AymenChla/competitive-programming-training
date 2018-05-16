@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/GCD_Sum_fenwick_tree_.dir/main.cpp.o  -o GCD_Sum_fenwick_tree_ 

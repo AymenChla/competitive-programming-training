@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A1__Death_Stars__easy_.dir/main.cpp.o  -o A1__Death_Stars__easy_ 

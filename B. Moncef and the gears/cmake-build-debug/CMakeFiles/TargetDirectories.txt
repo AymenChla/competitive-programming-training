@@ -1,0 +1,3 @@
+/home/freenemya/Desktop/B. Moncef and the gears/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/Desktop/B. Moncef and the gears/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/Desktop/B. Moncef and the gears/cmake-build-debug/CMakeFiles/B__Moncef_and_the_gears.dir

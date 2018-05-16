@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/B1__Maximum_Control__easy_.dir/main.cpp.o  -o B1__Maximum_Control__easy_ 

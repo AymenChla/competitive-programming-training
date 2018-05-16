@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/G. Escape to the wall/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/G. Escape to the wall/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/G. Escape to the wall/cmake-build-debug/CMakeFiles/G__Escape_to_the_wall.dir

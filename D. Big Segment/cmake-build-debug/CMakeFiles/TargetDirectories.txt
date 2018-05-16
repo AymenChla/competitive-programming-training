@@ -1,0 +1,3 @@
+/home/freenemya/Desktop/D. Big Segment/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/Desktop/D. Big Segment/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/Desktop/D. Big Segment/cmake-build-debug/CMakeFiles/D__Big_Segment.dir

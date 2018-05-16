@@ -1,0 +1,3 @@
+/home/freenemya/Desktop/J. Ice Skating/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/Desktop/J. Ice Skating/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/Desktop/J. Ice Skating/cmake-build-debug/CMakeFiles/J__Ice_Skating.dir

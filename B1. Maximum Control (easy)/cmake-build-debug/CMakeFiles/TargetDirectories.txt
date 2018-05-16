@@ -1,0 +1,3 @@
+/home/freenemya/CLionProjects/B1. Maximum Control (easy)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/freenemya/CLionProjects/B1. Maximum Control (easy)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/freenemya/CLionProjects/B1. Maximum Control (easy)/cmake-build-debug/CMakeFiles/B1__Maximum_Control__easy_.dir

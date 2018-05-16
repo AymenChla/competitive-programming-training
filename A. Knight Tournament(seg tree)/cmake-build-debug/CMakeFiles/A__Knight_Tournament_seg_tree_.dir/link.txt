@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/A__Knight_Tournament_seg_tree_.dir/main.cpp.o  -o A__Knight_Tournament_seg_tree_ 
